@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asynctrace"
+version = "0.1.0"
+description = "Full caller context in asyncio exceptions. Fix useless async stack traces in one line."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Bhupendra Gurjar", email = "bgurjar05.bg@gmail.com" }]
+keywords = ["developer-tools", "debugging", "python", "performance", "asynctrace"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [""]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage   = "https://github.com/bhupendra05/asynctrace"
+Repository = "https://github.com/bhupendra05/asynctrace"
+
+[tool.setuptools.packages.find]
+include = ["asynctrace*"]
